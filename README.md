@@ -1,6 +1,7 @@
 # alertdemo
 
-[Lichtblick] allows developers to create extensions, or custom code that is loaded and executed inside the Lichtblick application. This can be used to add custom panels. Extensions are authored in TypeScript using the `@lichtblick/suite` SDK.
+This extension is a demonstration of a proposed Lichtblick feature to allow message converter extensions the emission of alerts during message conversion.
+When opening an OSI MCAP file containing a `osi3.SensorView` topic, this message converter generates 250 alerts per frame.
 
 ## Develop
 
