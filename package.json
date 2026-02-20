@@ -1,0 +1,41 @@
+{
+  "name": "alertdemo",
+  "displayName": "alertdemo",
+  "description": "",
+  "publisher": "unknown",
+  "homepage": "",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "main": "./dist/extension.js",
+  "keywords": [],
+  "overrides": {
+    "webpack": "5.105.0"
+  },
+  "resolutions": {
+    "webpack": "5.105.0"
+  },
+  "scripts": {
+    "build": "lichtblick-extension build",
+    "lichtblick:prepublish": "lichtblick-extension build --mode production",
+    "lint": "eslint .",
+    "lint:ci": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "local-install": "lichtblick-extension install",
+    "package": "lichtblick-extension package",
+    "pretest": "lichtblick-extension pretest"
+  },
+  "devDependencies": {
+    "@lichtblick/eslint-plugin": "2.0.3",
+    "@lichtblick/suite": "https://github.com/thomassedlmayer/lichtblick.git#workspace=@lichtblick/suite&commit=3074271237c9b7735fc4e93cf1359fab5d0f8d83",
+    "@types/react": "18.3.28",
+    "@types/react-dom": "18.3.7",
+    "create-lichtblick-extension": "1.1.0",
+    "eslint": "9.39.2",
+    "minimatch": "^10.2.2",
+    "prettier": "3.8.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "yarn@4.12.0"
+}
