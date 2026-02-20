@@ -19,6 +19,7 @@ export function activate(extensionContext: ExtensionContext): void {
         };
         context?.emitAlert(alert, `alertId`+i.toString());
       }
+      //throw new Error("Message Converter Test Error");
       return {
         entities: [],
         deletions: []
